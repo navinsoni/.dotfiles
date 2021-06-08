@@ -10,6 +10,11 @@ vim.api.nvim_set_keymap('n', '<Leader>l', '<C-\\><C-N><C-w>l', {noremap = true, 
 vim.api.nvim_set_keymap('n', '<Leader>j', '<C-\\><C-N><C-w>j', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>k', '<C-\\><C-N><C-w>k', {noremap = true, silent = true})
 
+vim.api.nvim_set_keymap('i', '<Leader>h', '<C-\\><C-N><C-w>h', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<Leader>l', '<C-\\><C-N><C-w>l', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<Leader>j', '<C-\\><C-N><C-w>j', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<Leader>k', '<C-\\><C-N><C-w>k', {noremap = true, silent = true})
+
 vim.api.nvim_set_keymap('t', '<Leader>h', '<C-\\><C-N><C-w>h', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('t', '<Leader>l', '<C-\\><C-N><C-w>l', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('t', '<Leader>j', '<C-\\><C-N><C-w>j', {noremap = true, silent = true})

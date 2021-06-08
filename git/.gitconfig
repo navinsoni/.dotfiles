@@ -1,0 +1,17 @@
+[user]
+	email = navinsoni89@gmail.com
+	name = Navin Soni
+[color]
+	ui = auto
+[core]
+	pager = less -FMRiX
+[push]
+	default = simple
+[alias]
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+    st = status -s
+    co = checkout
+    ci = commit
+    br = branch
+[pull]
+	rebase = true
