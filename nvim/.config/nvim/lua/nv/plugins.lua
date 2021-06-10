@@ -8,7 +8,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
 	    execute 'packadd packer.nvim'
 end	
 
-
 return require('packer').startup(function()
 	  -- Packer can manage itself
 	  use 'wbthomason/packer.nvim'  
@@ -20,17 +19,16 @@ return require('packer').startup(function()
 	  use 'neovim/nvim-lspconfig'
 	  use 'hrsh7th/nvim-compe'
 	  use 'kabouzeid/nvim-lspinstall'
+      use  'glepnir/lspsaga.nvim'
 
 	  use 'nvim-treesitter/nvim-treesitter'
 	  use 'nvim-treesitter/playground'
 
 	  -- telescope requirements...
-          use 'nvim-lua/popup.nvim'
+      use 'nvim-lua/popup.nvim'
 	  use 'nvim-lua/plenary.nvim'
 	  use 'nvim-telescope/telescope.nvim'
 	  use 'nvim-telescope/telescope-fzy-native.nvim'
-
-	  use 'neoclide/coc.nvim'
 
 	  -- Debugger Plugins
 	  use 'puremourning/vimspector'

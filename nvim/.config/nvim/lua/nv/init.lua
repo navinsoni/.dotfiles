@@ -1,6 +1,7 @@
 require('nv.plugins')
 require('nv.keymappings')
 require('nv.compe-config')
+require('nv.lspsaga-config')
 require('nv.telescope-config')
 require('nv.lspinstall-config')
 
