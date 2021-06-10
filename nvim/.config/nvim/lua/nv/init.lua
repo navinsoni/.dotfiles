@@ -4,6 +4,7 @@ require('nv.compe-config')
 require('nv.lspsaga-config')
 require('nv.telescope-config')
 require('nv.lspinstall-config')
+require('nv.lspjava-config')
 
 local function on_attach()
     -- TODO: TJ told me to do this and I should do it because he is Telescopic
