@@ -35,3 +35,9 @@ vim.api.nvim_set_keymap('n', '<S-TAB>', ':bprevious<CR>', {noremap = true, silen
 -- Move selected line / block of text in visual mode
 vim.api.nvim_set_keymap('x', 'K', ':move \'<-2<CR>gv-gv', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv', {noremap = true, silent = true})
+
+-- vim test
+vim.api.nvim_set_keymap('n', '<Leader>tf', ':TestFile<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>tn', ':TestNearest<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>tl', ':TestLast<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>tv', ':TestVisit<CR>', {noremap = true, silent = true})

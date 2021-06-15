@@ -31,6 +31,7 @@ return require('packer').startup(function()
 	  use 'nvim-telescope/telescope-fzy-native.nvim'
 
       use 'mfussenegger/nvim-jdtls'
+      use 'vim-test/vim-test'
 
 	  -- Debugger Plugins
 	  use 'puremourning/vimspector'
