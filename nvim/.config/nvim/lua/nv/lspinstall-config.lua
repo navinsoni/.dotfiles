@@ -6,6 +6,7 @@ local function setup_servers()
             require'lspconfig'[server].setup{}
         end
 	end
+    require("lspconfig").pylsp.setup{}
 end
 
 setup_servers()

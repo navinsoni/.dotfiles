@@ -31,4 +31,16 @@ set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-set colorcolumn=80
+set colorcolumn=100
+
+set clipboard+=unnamedplus
+
+let test#strategy = "neovim"
+let test#custom_runners = {'java': ['BrazilTest']}
+let test#java#runner = 'braziltest'
+let test#enabled_runners = ["java#braziltest"]
+
+let g:ale_linters = {'python': 'black'}
+let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'], 'python': ['isort', 'black']}
+let g:ale_fix_on_save = 1
+let g:ale_disable_lsp = 1
