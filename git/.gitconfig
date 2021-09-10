@@ -1,5 +1,5 @@
 [user]
-	email = navinsoni89@gmail.com
+	email = navinns@amazon.com
 	name = Navin Soni
 [color]
 	ui = auto
@@ -15,3 +15,5 @@
     br = branch
 [pull]
 	rebase = true
+[rerere]
+	enabled = true
