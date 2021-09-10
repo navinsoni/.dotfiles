@@ -14,12 +14,13 @@ return require('packer').startup(function()
 	  use 'kyazdani42/nvim-tree.lua'
 	  use 'kyazdani42/nvim-web-devicons'
 	  use {"ahmedkhalf/lsp-rooter.nvim", opt = true}
-	  use {"windwp/nvim-autopairs", opt = true}
+      use 'jiangmiao/auto-pairs'
+	  -- use {"windwp/nvim-autopairs", opt = true}
 
 	  use 'neovim/nvim-lspconfig'
 	  use 'hrsh7th/nvim-compe'
 	  use 'hrsh7th/vim-vsnip'
-	  use 'kabouzeid/nvim-lspinstall'
+	  -- use 'kabouzeid/nvim-lspinstall'
 	  use  'glepnir/lspsaga.nvim'
 
 	  use 'nvim-treesitter/nvim-treesitter'
@@ -37,5 +38,5 @@ return require('packer').startup(function()
 	  -- Debugger Plugins
 	  use 'puremourning/vimspector'
 	  use 'szw/vim-maximizer'
-	  use 'dense-analysis/ale'
+	  -- use 'dense-analysis/ale'
 end)
