@@ -16,10 +16,9 @@ local terraform = require "nv/efm/terraform"
 local misspell = require "nv/efm/misspell"
 
 -- https://github.com/mattn/efm-langserver
-lspconfig.efm.setup {
+require "lspconfig".efm.setup {
     on_attach = on_attach,
     init_options = { documentFormatting = true },
-    root_dir = vim.loop.cwd,
     settings = {
         rootMarkers = { ".git/" },
         languages = {

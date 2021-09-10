@@ -2,7 +2,8 @@ vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {nor
 vim.api.nvim_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', 'f', '<cmd>lua vim.lsp.buf.formatting<CR>', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('n', 'f', '<cmd>lua vim.lsp.buf.formatting<CR>', {noremap = true, silent = true})
+vim.cmd("nnoremap <silent> f <cmd>lua vim.lsp.buf.formatting()<CR>")
 
 vim.lsp.handlers["textDocument/references"] = require("telescope.builtin").lsp_references
 vim.api.nvim_set_keymap('n', '<Leader>rr', ':Lspsaga rename<CR>', { noremap = true, silent = true})
