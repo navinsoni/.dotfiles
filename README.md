@@ -4,9 +4,10 @@
 
 ### Install stow
 
-- Follow instructions at "https://linuxconfig.org/how-to-use-gnu-stow-to-manage-programs-installed-from-source-and-dotfiles"
+- `wget https://ftp.gnu.org/gnu/stow/stow-latest.tar.gz && tar -xf stow-latest.tar.gz && cd `ls stow-_ -d | grep -v gz` && ./configure && make && sudo make install && cd .. && rm -rf stow-_`
 
 #### Instructions to install configs
+
 - `cd ~`
 - `git clone https://github.com/navinsoni/.dotfiles`
 - `cd ~/.dotfiles`
@@ -23,7 +24,7 @@ Note: In case you are using git, update `git/.gitconfig` with your `email` and `
 ### Install nvm, node
 
 - `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash`
-- `nvm install node`
+- `nvm install --lts`
 
 ### Install efm-languageserver
 
@@ -33,4 +34,4 @@ Note: In case you are using git, update `git/.gitconfig` with your `email` and `
 
 ### Install Language specific servers
 
-- npm install -g black pyright flake8 mypy prettier eslint golint misspell shellcheck vint terraform markdownlint-cli
+- npm install -g black typescript-language-server pyright flake8 mypy prettier eslint golint misspell shellcheck vint terraform markdownlint-cli
