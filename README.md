@@ -6,6 +6,14 @@
 
 - Follow instructions at "https://linuxconfig.org/how-to-use-gnu-stow-to-manage-programs-installed-from-source-and-dotfiles"
 
+#### Instructions to install configs
+- `cd ~`
+- `git clone https://github.com/navinsoni/.dotfiles`
+- `cd ~/.dotfiles`
+- Install required configs (e.g. `stow install nvim`)
+
+Note: In case you are using git, update `git/.gitconfig` with your `email` and `name`
+
 ## Installations required for Neovim[nvim]
 
 ### Install packer
