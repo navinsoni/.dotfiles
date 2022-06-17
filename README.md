@@ -11,7 +11,7 @@
 - `cd ~`
 - `git clone https://github.com/navinsoni/.dotfiles`
 - `cd ~/.dotfiles`
-- Install required configs (e.g. `stow install nvim`)
+- Install required configs (e.g. `stow -R -v nvim <all other configs you need>`)
 
 Note: In case you are using git, update `git/.gitconfig` with your `email` and `name`
 
