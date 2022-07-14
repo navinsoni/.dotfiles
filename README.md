@@ -33,5 +33,7 @@ Note: In case you are using git, update `git/.gitconfig` with your `email` and `
 - Add it's PATH in shell file; (e.g. "export PATH=$HOME/go/bin:$PATH")
 
 ### Install Language specific servers
+ref: https://github.com/tsuyoshicho/vim-efm-langserver-settings
+- npm install -g typescript-language-server prettier eslint golint misspell shellcheck vint terraform markdownlint-cli
+- pip install black pyright flake8 mypy pynvim
 
-- npm install -g black typescript-language-server pyright flake8 mypy prettier eslint golint misspell shellcheck vint terraform markdownlint-cli
